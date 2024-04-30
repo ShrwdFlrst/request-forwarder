@@ -1,0 +1,32 @@
+POST http://localhost:3000/forward
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+###
+
+# curl -X PUT
+#
+#  http://localhost:3000/forward
+#  -H 'Content-Type: application/xml'
+#  -d '<?xml version="1.0" encoding="UTF-8"?>
+#<book>
+#  <title>The Great Gatsby</title>
+#  <author>F. Scott Fitzgerald</author>
+#  <published>1925</published>
+#</book>'
+PUT http://localhost:3000/forward
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <published>1925</published>
+</book>
+
+###
+
